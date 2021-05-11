@@ -22,6 +22,12 @@ export class AddLeadToSmartCampaignStep extends BaseStep implements StepInterfac
     optionality: FieldDefinition.Optionality.OPTIONAL,
     description: 'ID of partition lead belongs to',
     help: 'Only necessary to provide if Marketo has been configured to allow duplicate leads by email.',
+  }, {
+    field: 'something',
+    type: FieldDefinition.Type.NUMERIC,
+    optionality: FieldDefinition.Optionality.OPTIONAL,
+    description: 'ID of partition lead belongs to',
+    help: 'Only necessary to provide if Marketo has been configured to allow duplicate leads by email.',
   }];
   protected expectedRecords: ExpectedRecord[] = [{
     id: 'lead',
